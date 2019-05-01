@@ -1,40 +1,21 @@
 ---
 layout: default
+paginator: false
 ---
 
 <div class="row">
-  <div class="col">  
-    {% for post in paginator.posts %}
-      {% assign minutes = post.content | strip_html | number_of_words | divided_by: 180 %}
-      {% if minutes == 0 %}
-        {% assign minutes = 1 %}
-      {% endif %}
+  <div class="col">
       <div class="mb-4">
+          <h2>About me</h2>
 
-        <a href="{{ post.url | prepend: site.baseurl }}" class="nocolor">
-          <h2>{{ post.title }}</h2>
-        </a>
+        <article>
+          About me.
+        </article>
 
-        <div>
-          {{ post.content }}
-        </div>
-
-        <div class="meta text-muted">
-          {{ post.date | date_to_long_string }},
-          <span>
-            <i class="fa fa-clock-o ml-1" aria-hidden="true"></i> {{ minutes }} min
-          </span>
-          /
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            permalink
-          </a>
-        </div>
-        
       </div>
       <hr>
-  {% endfor %}
   </div>
 </div>
 
-  
+
 </div>
