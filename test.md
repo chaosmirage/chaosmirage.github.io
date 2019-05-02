@@ -1,0 +1,2 @@
+- [Link where I found this](http://stackoverflow.com/questions/15917463/embedding-markdown-in-jekyll-html)
+- Other bullet points with links
