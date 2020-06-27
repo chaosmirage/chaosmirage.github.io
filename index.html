@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col col-md-6">
+      <div class="mb-4 pt-5">
+        <img
+        src="images/me.jpg"
+        width="150"
+        height="150"
+        class="rounded-circle d-block"
+        alt="Adel Khamatov"
+        />
+        <h1 class="mt-3">Адель Хаматов, <br> фронтенд-разработчик</h1>
+        {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+          ·
+        {% endif %}
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <article class="pt-4">
+          <p>Разрабатываю пользовательские интерфейсы.</p>
+        </article>
+      </div>
+  </div>
+</div>
+
+</div>
